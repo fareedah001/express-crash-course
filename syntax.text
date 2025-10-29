@@ -1,0 +1,13 @@
+//expresss syntax
+
+const express =require('express');
+
+ init express
+ const app =express();
+
+ Create your end-point /route handlers
+ app.get("/", function (req,res){
+    res.send("Hello World");
+ });
+ //Listen on a port
+ app.listen(5000);

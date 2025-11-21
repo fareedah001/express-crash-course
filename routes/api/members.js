@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const members = require('../../members');
-
+const members = require('../../Members');
+const uuid = require('uuid');
 
 // Routes
 // Get all members
@@ -31,7 +31,7 @@ id: uuid.v4(),
 name: req.body.name,
 email: req.body.email,
 status: 'active'
-}
+};
 if(!newMember.name || !newMember.email){
    return res.status(400).json({msg:`Please include a name and email`});
 }

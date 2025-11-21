@@ -18,4 +18,4 @@ status:"inactive"
 }
 
 ];
-module.exports = members;
+module.exports =members;
